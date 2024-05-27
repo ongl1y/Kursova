@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEAEA">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/Konfigurator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/inter_bold"
+        android:gravity="center"
+        android:text="Конфігуратор ПК"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:background="@drawable/border"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/motherboardImageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#F2F2F2"
+            app:srcCompat="@drawable/motherboard"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/motherboardNameTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#F2F2F2"
+            android:fontFamily="@font/inter_medium"
+            android:gravity="center"
+            android:text="@string/default_motherboard_name"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            tools:ignore="HardcodedText" />
+
+
+        <ImageButton
+            android:background="#F2F2F2"
+            android:id="@+id/open_motherboard_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/plus"
+            tools:ignore="ContentDescription" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:background="@drawable/border"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/processorImageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#F2F2F2"
+            app:srcCompat="@drawable/processor"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/processorNameTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#F2F2F2"
+            android:gravity="center"
+            android:text="@string/default_processor_name"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:fontFamily="@font/inter_medium"
+            tools:ignore="HardcodedText" />
+
+
+        <ImageButton
+            android:background="#F2F2F2"
+            android:id="@+id/open_processor_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/plus"
+            tools:ignore="ContentDescription" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:background="@drawable/border"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/videocardImageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#F2F2F2"
+            app:srcCompat="@drawable/videocard"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/videocardNameTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#F2F2F2"
+            android:gravity="center"
+            android:text="@string/default_videocard_name"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:fontFamily="@font/inter_medium"
+            tools:ignore="HardcodedText" />
+
+
+        <ImageButton
+            android:background="#F2F2F2"
+            android:id="@+id/open_videocard_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/plus"
+            tools:ignore="ContentDescription" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:background="@drawable/border"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/ramImageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#F2F2F2"
+            app:srcCompat="@drawable/ram"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/ramNameTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#F2F2F2"
+            android:gravity="center"
+            android:text="@string/default_ram_name"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:fontFamily="@font/inter_medium"
+            tools:ignore="HardcodedText" />
+
+
+        <ImageButton
+            android:background="#F2F2F2"
+            android:id="@+id/open_ram_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/plus"
+            tools:ignore="ContentDescription" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:background="@drawable/border"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/storageImageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#F2F2F2"
+            app:srcCompat="@drawable/storage"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/storageNameTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#F2F2F2"
+            android:gravity="center"
+            android:text="@string/default_storage_name"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:fontFamily="@font/inter_medium"
+            tools:ignore="HardcodedText" />
+
+
+        <ImageButton
+            android:background="#F2F2F2"
+            android:id="@+id/open_storage_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/plus"
+            tools:ignore="ContentDescription" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:background="@drawable/border"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/fanImageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#F2F2F2"
+            app:srcCompat="@drawable/fan"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/fanNameTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#F2F2F2"
+            android:gravity="center"
+            android:text="@string/default_fan_name"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:fontFamily="@font/inter_medium"
+            tools:ignore="HardcodedText" />
+
+
+        <ImageButton
+            android:background="#F2F2F2"
+            android:id="@+id/open_fan_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/plus"
+            tools:ignore="ContentDescription" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:background="@drawable/border"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/powerImageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#F2F2F2"
+            app:srcCompat="@drawable/power"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/powerNameTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#F2F2F2"
+            android:gravity="center"
+            android:text="@string/default_power_name"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:fontFamily="@font/inter_medium"
+            tools:ignore="HardcodedText" />
+
+
+        <ImageButton
+            android:background="#F2F2F2"
+            android:id="@+id/open_power_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/plus"
+            tools:ignore="ContentDescription" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:background="@drawable/border"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/caseImageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#F2F2F2"
+            app:srcCompat="@drawable/case_pc"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/caseNameTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#F2F2F2"
+            android:gravity="center"
+            android:text="@string/default_case_name"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:fontFamily="@font/inter_medium"
+            tools:ignore="HardcodedText" />
+
+
+        <ImageButton
+            android:background="#F2F2F2"
+            android:id="@+id/open_case_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/plus"
+            tools:ignore="ContentDescription" />
+
+
+    </LinearLayout>
+        <Button
+            android:id="@+id/clearAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Очистити поля" />
+</LinearLayout>
+</ScrollView>

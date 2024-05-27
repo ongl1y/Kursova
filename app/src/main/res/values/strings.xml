@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Kursova</string>
+    <string name="registration">Реєстрація</string>
+    <string name="default_processor_name">Процесор</string>
+    <string name="default_motherboard_name">Материнська плата</string>
+    <string name="default_videocard_name">Відеокарта</string>
+    <string name="default_ram_name">Оперативна пам\'ять</string>
+    <string name="default_storage_name">Накопичувач</string>
+    <string name="default_fan_name">Система охолодження</string>
+    <string name="default_power_name">Блок живлення</string>
+    <string name="default_case_name">Корпус</string>
+</resources>

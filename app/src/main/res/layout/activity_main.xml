@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEAEA"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="130dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/registration"
+        android:textColor="@color/black"
+        android:textSize="35sp" />
+
+    <EditText
+        android:id="@+id/user_login"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="Введіть логін"
+        android:inputType="text"
+        android:textSize="20sp"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <EditText
+        android:id="@+id/user_email"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Введіть email"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <EditText
+        android:id="@+id/user_password"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Введіть пароль"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <Button
+        android:id="@+id/registration_button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#CFB36C"
+        android:text="Зареєструватись"
+        android:textSize="20sp"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="#EAEAEA"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/link_to_auth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вже є акаунт? Вхід"
+        android:fontFamily="@font/inter"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:onClick="clickTextView"
+        tools:ignore="HardcodedText" />
+</LinearLayout>
